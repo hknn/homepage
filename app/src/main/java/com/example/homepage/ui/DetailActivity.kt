@@ -37,7 +37,7 @@ class DetailActivity : AppCompatActivity() {
                 detailBinding.tvSubtitle.text = it.subTitle
                 detailBinding.tvDescription.text = it.description
                 detailBinding.tvPrice.text =
-                    getString(R.string.price_placeholder, it.price.toString())
+                    getString(R.string.price_placeholder, it.discountedPrice.toString())
             })
 
             messageData.observe(this@DetailActivity, {
